@@ -47,9 +47,6 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
-            <!-- good way to write action name is  com.amit.tried2.MAINACTIVITY -->
-
         </activity>
         <activity
             android:name=".TextPlay"
@@ -64,7 +61,33 @@
             android:label="Camera Application"
             android:screenOrientation="portrait" >
         </activity>
-        
+        <activity
+            android:name=".Data"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".OpenedClass"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog"
+            >
+            <intent-filter>
+                <action android:name="com.stupidamigo.sabasicapp.ABOUT" />   
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Prefs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.stupidamigo.sabasicapp.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
